@@ -31,8 +31,8 @@ from tools.aqueue import AQueue
 from tools.flood import retry_on_flood
 
 
-OWNER_ID = 5543390445
-auth_users = [5543390445, 5164955785, 5891177226, 7827086839, 6975428639] # eg: [83528911,836289,9362891] # eg: [83528911,836289,9362891]
+OWNER_ID = 1163318744
+auth_users = [1163318744, 5543390445] # eg: [83528911,836289,9362891] # eg: [83528911,836289,9362891]
 AUTH_USERS = auth_users + [OWNER_ID]
 
 mangas: Dict[str, MangaCard] = dict()
@@ -49,18 +49,20 @@ locks: Dict[int, asyncio.Lock] = dict()
 plugin_dicts: Dict[str, Dict[str, MangaClient]] = {
     "🇬🇧 EN": {
         "MangaDex": MangaDexClient(),
+        "Comick": ComickClient(), 
         "Mgeko": MgekoClient(),
-        "ReaperScans": ReaperScansClient(),
         "MangaBuddy": MangaBuddyClient(),    
         "MangaMob": mangamob(),
         "Manhuafast": ManhuaFastClient(),
         "ManhwaClan": ManhwaClanClient(), 
-        "Comick": ComickClient(),       
+        "ReaperScans": ReaperScansClient(), #VPS  
+        "AsuraScans": AsuraScansClient(), #VPS    
           },
     "🔞 18+": {
         "Manga18fx": Manga18fxClient(),
         "MangaDistrict": MangaDistrictClient(),
         "OmegaScans": OmegaScansClient(),
+        "Manhwa18cc": Manhwa18ccClient(),
     }
 }
 
