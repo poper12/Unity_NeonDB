@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: KunalG932
+    runtime: python3
+    buildCommand: ""
+    startCommand: python3 main.py
