@@ -18,4 +18,4 @@ from .manhuafast import ManhuaFastClient
 from .omegascans import OmegaScansClient
 from .manga18fx import Manga18fxClient
 from .mangadistrict import MangaDistrictClient
-from .manga18cc import Manhwa18ccClient
+from .manhwa18cc import Manhwa18ccClient
