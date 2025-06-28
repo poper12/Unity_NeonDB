@@ -5,9 +5,9 @@ load_dotenv()
 
 env_vars = {
   # Get From my.telegram.org
-  "API_HASH": os.getenv("API_HASH", "7699560031"),
+  "API_HASH": os.getenv("API_HASH", ""),
   # Get From my.telegram.org
-  "API_ID": os.getenv("API_ID", "a184b91d39fc85265e232e7c323fac45"),
+  "API_ID": os.getenv("API_ID", ""),
   #Get For @BotFather
   "BOT_TOKEN": os.getenv("BOT_TOKEN", ""),
   # Get For tembo.io
