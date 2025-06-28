@@ -2,7 +2,7 @@ from .client import MangaClient, MangaCard, MangaChapter
 
 # Not Working for render/koyeb [ONLY VPS]
 from .mgecko import MgekoClient
-from .asurascans import AsuraScansClient|
+from .asurascans import AsuraScansClient
 from .reaperscans import ReaperScansClient
 
 #Manhwa working clients
